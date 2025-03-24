@@ -18,7 +18,7 @@ export function Hero() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="text-center lg:text-left">
             <div className="inline-block glass px-4 py-2 rounded-full text-sm font-medium text-primary mb-6 animate-fade-in">
-              Introducing GlassNova
+              Introducing Gayanga Tech.AI
             </div>
             
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6 animate-slide-up text-shadow">
@@ -26,8 +26,8 @@ export function Hero() {
             </h1>
             
             <p className="text-lg text-muted-foreground mb-8 max-w-lg mx-auto lg:mx-0 animation-delay-200 animate-slide-up">
-              Elevate your digital presence with our cutting-edge design system. 
-              Built for modern interfaces with precision and elegance.
+              Elevate your digital presence with our cutting-edge AI solutions. 
+              Built for modern businesses with precision and elegance.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start animation-delay-400 animate-slide-up">
@@ -41,7 +41,7 @@ export function Hero() {
                 href="#contact"
                 className="inline-flex items-center justify-center bg-primary hover:bg-primary/90 text-primary-foreground rounded-full px-6 py-3 text-sm font-medium transition-colors group"
               >
-                Get Started
+                Try Now
                 <ArrowRight size={16} className="ml-2 group-hover:translate-x-1 transition-transform" />
               </a>
             </div>

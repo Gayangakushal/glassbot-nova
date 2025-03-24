@@ -10,10 +10,10 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mb-10">
           <div>
             <h3 className="text-xl font-bold text-gradient mb-4">
-              Glass<span className="font-light">Nova</span>
+              Gayanga <span className="font-light">Tech.AI</span>
             </h3>
             <p className="text-muted-foreground max-w-xs">
-              Redefining the digital experience with innovative design and
+              Redefining the digital experience with innovative AI solutions and
               cutting-edge technology.
             </p>
           </div>
@@ -101,7 +101,7 @@ export function Footer() {
 
         <div className="pt-8 border-t border-white/5 text-center text-muted-foreground text-sm">
           <p className="flex items-center justify-center gap-1">
-            Crafted with <Heart size={14} className="text-red-500" /> by GlassNova © {new Date().getFullYear()}
+            Crafted with <Heart size={14} className="text-red-500" /> by Gayanga Tech.AI © {new Date().getFullYear()}
           </p>
         </div>
       </Container>

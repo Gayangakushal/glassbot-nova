@@ -43,7 +43,7 @@ export function Navbar() {
             href="#home"
             className="text-2xl font-bold text-gradient tracking-tight"
           >
-            Glass<span className="font-light">Nova</span>
+            Gayanga <span className="font-light">Tech.AI</span>
           </a>
 
           {/* Desktop Navigation */}
@@ -59,9 +59,9 @@ export function Navbar() {
             ))}
             <a
               href="#contact"
-              className="glass px-5 py-2 rounded-full text-sm font-medium hover:bg-white/10 transition-all"
+              className="bg-primary hover:bg-primary/90 text-primary-foreground px-5 py-2 rounded-full text-sm font-medium transition-all"
             >
-              Get Started
+              Try Now
             </a>
           </nav>
 
@@ -92,10 +92,10 @@ export function Navbar() {
               ))}
               <a
                 href="#contact"
-                className="glass px-5 py-2 rounded-full text-sm font-medium text-center hover:bg-white/10 transition-all"
+                className="bg-primary text-primary-foreground px-5 py-2 rounded-full text-sm font-medium text-center hover:bg-primary/90 transition-all"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
-                Get Started
+                Try Now
               </a>
             </nav>
           </Container>
