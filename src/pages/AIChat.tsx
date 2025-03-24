@@ -18,6 +18,7 @@ const openai = new OpenAI({
     "HTTP-Referer": window.location.origin,
     "X-Title": "Gayanga Tech.AI",
   },
+  dangerouslyAllowBrowser: true, // Add this to allow browser usage
 });
 
 const AIChat = () => {
