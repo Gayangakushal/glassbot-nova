@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react";
 import { Container } from "@/components/ui/Container";
 import { cn } from "@/lib/utils";
 import { Menu, X } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const NAV_ITEMS = [
   { label: "Home", href: "#home" },
@@ -39,12 +40,12 @@ export function Navbar() {
     >
       <Container>
         <div className="flex items-center justify-between">
-          <a
-            href="#home"
+          <Link
+            to="/"
             className="text-2xl font-bold text-gradient tracking-tight"
           >
             Gayanga <span className="font-light">Tech.AI</span>
-          </a>
+          </Link>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
@@ -57,12 +58,12 @@ export function Navbar() {
                 {item.label}
               </a>
             ))}
-            <a
-              href="#contact"
+            <Link
+              to="/chat"
               className="bg-primary hover:bg-primary/90 text-primary-foreground px-5 py-2 rounded-full text-sm font-medium transition-all"
             >
               Try Now
-            </a>
+            </Link>
           </nav>
 
           {/* Mobile menu button */}
@@ -90,13 +91,13 @@ export function Navbar() {
                   {item.label}
                 </a>
               ))}
-              <a
-                href="#contact"
+              <Link
+                to="/chat"
                 className="bg-primary text-primary-foreground px-5 py-2 rounded-full text-sm font-medium text-center hover:bg-primary/90 transition-all"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 Try Now
-              </a>
+              </Link>
             </nav>
           </Container>
         </div>

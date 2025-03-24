@@ -2,6 +2,7 @@
 import React from "react";
 import { Container } from "@/components/ui/Container";
 import { Clock } from "lucide-react";
+import { Link } from "react-router-dom";
 
 export function Contact() {
   return (
@@ -29,12 +30,12 @@ export function Contact() {
           <p className="text-muted-foreground mb-8">
             Our contact form is currently under development. Please check back later or reach out to us through our social media channels.
           </p>
-          <a
-            href="#home"
+          <Link
+            to="/chat"
             className="inline-flex items-center justify-center bg-primary hover:bg-primary/90 text-primary-foreground rounded-full px-6 py-3 text-sm font-medium transition-colors group mx-auto"
           >
             Try Gayanga Tech.AI
-          </a>
+          </Link>
         </div>
       </Container>
     </section>

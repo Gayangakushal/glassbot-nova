@@ -2,6 +2,7 @@
 import React from "react";
 import { Container } from "@/components/ui/Container";
 import { ArrowRight } from "lucide-react";
+import { Link } from "react-router-dom";
 
 export function Hero() {
   return (
@@ -37,13 +38,13 @@ export function Hero() {
               >
                 Explore Features
               </a>
-              <a
-                href="#contact"
+              <Link
+                to="/chat"
                 className="inline-flex items-center justify-center bg-primary hover:bg-primary/90 text-primary-foreground rounded-full px-6 py-3 text-sm font-medium transition-colors group"
               >
                 Try Now
                 <ArrowRight size={16} className="ml-2 group-hover:translate-x-1 transition-transform" />
-              </a>
+              </Link>
             </div>
           </div>
           
