@@ -13,7 +13,7 @@ import OpenAI from "openai";
 // Initialize the OpenAI client with OpenRouter configuration
 const openai = new OpenAI({
   baseURL: "https://openrouter.ai/api/v1",
-  apiKey: "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",
+  apiKey: "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",
   defaultHeaders: {
     "HTTP-Referer": window.location.origin,
     "X-Title": "Gayanga Tech.AI",
@@ -23,7 +23,7 @@ const openai = new OpenAI({
 
 const AIChat = () => {
   const [userMessage, setUserMessage] = useState("");
-  const [conversation, setConversation] = useState<Array<{ role: string; content: string }>>([]);
+  const [conversation, setConversation] = useState<Array<{ role: "user" | "assistant" | "system"; content: string }>>([]);
   const [isLoading, setIsLoading] = useState(false);
   const { toast } = useToast();
 
@@ -32,7 +32,7 @@ const AIChat = () => {
     if (!userMessage.trim()) return;
 
     // Add user message to conversation
-    const newUserMessage = { role: "user", content: userMessage };
+    const newUserMessage = { role: "user" as const, content: userMessage };
     setConversation([...conversation, newUserMessage]);
     setUserMessage("");
     setIsLoading(true);
